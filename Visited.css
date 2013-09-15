@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*
+Name: /标记已访问
+*/
+
+
+/*----------媒体元素悬停时样式------------------*/
+@media screen and (min-width: 128px)
+{
+a:hover, a:hover *
+{
+color: Purple !important;
+background: 0 ;
+}
+}
+/*----------特别添加紫个小红点*------------------*/
+*a:visited:after {color: Purple !important; content: "." !important;}*
