@@ -1,0 +1,55 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document url-prefix("http://www.baidu.com/s"),  url-prefix("http://www.baidu.com/baidu")
+{
+
+/* ----------------------- 页面宽度 -----------------------*/
+body:not([class="tbo"]), 
+body:not([class="tbo"]) .sfbg,
+body:not([class="tbo"]) #appbar
+{
+	width: 70% !important;
+	min-width: 833px !important;
+}
+
+.result ,.result-op{
+  padding:4px !important;
+  background-color: #CCE8CF;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border-collapse: separate  !important;
+}
+
+div#content_right 
+{display:none !important;
+}
+
+#wrapper {
+    min-width: 80% !important;
+}
+
+
+body:not([class="tbo"]), 
+body:not([class="tbo"]) .sfbg
+{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+
+html
+{
+	background-image: url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGMjI3RkFBRDdCRjExMUUxQTAzRkRGRkVBQ0MwRTQ1RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGMjI3RkFBRTdCRjExMUUxQTAzRkRGRkVBQ0MwRTQ1RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkYyMjdGQUFCN0JGMTExRTFBMDNGREZGRUFDQzBFNDVGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkYyMjdGQUFDN0JGMTExRTFBMDNGREZGRUFDQzBFNDVGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAdgB2AwERAAIRAQMRAf/EAGQAAQEBAQAAAAAAAAAAAAAAAAEAAgcBAQAAAAAAAAAAAAAAAAAAAAAQAAICAQIEBgIDAQEAAAAAAAERACExQVFhcQIS8IGRobEiweHR8TJCchEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7sMimsQEp6PY1AEX9q0HxAQCAUL8coALq60x5QH/AD0oNbwHc2uEAN616awIEU7eW+cB+pyEMiBkIdSWM7wFo6ME15QEEAk1zWkAbAoLRvO+IDbHHX3gQGL8bwMkMts75cBDon1RcC0vOGfiBEb2NTdesCWhyVcC4WPSBEsM76bwA47tdDAlTOg2PtAaIBKgRJBId+OMABywy36QFk41/vnAGe381mBA1aDzl1ASaZxoYAB1np3W7gaCPAGAYGgJsQLIrpepBgRZXSLe2lwINgNHWBAigBQ8DECZL+cwAnarQgRetDeBU9Hpk5gNklGxZP8AUB7Q81l6KAMZWbgHUAceR/UDWm+i8oBQSw8QIo3d5e0C6ic7YgQKOu3pAlvnbMCtJN66cPiAWuHhOA9xBNNbZqBMcSNNoBpw47QLUsI7v8wNaA8U9doGaWxMCXSGRZ4WICA+kDAO0ASAIGzcBs1ZHt5QLI2wRAgX/IgQHbTXPaAkEnccYAAaPpcCtkDy/MCJJYZG6gRw2xvlwIYRvhuYERj7fbWBELYaGBIAfONDAu0E1V5qBABlafjlAQm1xeeECZGgPP10gDwMHfMCP2RzaIBgWt4F3cCQJy1wZgT6fIZ8VtAkwq4HygXZmleeMBAtG1j1gZZWOZQ3gVr/AFtQMDRBxY0cCdctBmAajpwbAMCwUKBtjxxgRP1vTQviIEAE+YcC7SQaRpk/EC6QEyTsYAScPk/BgX2JRLG8C6Qws7ZzAUe1s8TjWBLB1PnQgNNajA4qBnpLJIydYCSHmx4MAbGSKbgLC4HF6wIdIHUCaenKALIqtvFQIvpOz+ICSKDB/UC2RXO6gXV28gPzAiQ3nfCgVqsDX9wF0SBWHAyQMpqztAQDdcIB9um9ToeMBpEVwWvxAhZ7c/iAUBRsZUCLPnrlQIjJOdjAgRYQWXygJIJPqD5wIPL3z+oEKv2294ESrBWgRgHdjbygILLti0BiBBVnt0eYGVTR47ergaGGL1PgwBkmgL5edQNd3U1rtvUCOis6wM9J9BvpAbDbb3qA9QLN1kF7QBpnJdlqBPpHSXr5iAWw6WCQBASSAgdE4EAO2xwgXURqKpuAAjtLtQHuGNNDAu09N3o+JgQPphYgRNMn/VCBBjqZocNYB1UxT3MC3PSNYDgN8jrAjYI2G11ABkhGxiBriTePIZgA1pP284Cwfj2gBXB7e0AY6SmAfxAVTeDnzgNGx7+mYABodOXnALBKxiAkFsH0+bgH10HqhAbH/npwYA7w3hwEgtVx5wLpr+OECxdt4gA0AV4frAe4a89qgBAaHJD9QJlEsBQK+1qvaAoEB0RvWYF1NWfttvAkzxH44wI0N9ue0AIwNRvUDTCs1j9wBr/RwoB23YagN0CUfVwI8gxvACUVoYCG2DrpwgXUQKOF86wKwEd6AHxAA2V/rJuAgge2f5gH/V4wSYFR6aKJNwGzaRaztAgCyBR35coCSUVoUYGQSOosoH8QNAAp40W0AVrIVQL650K+NIESGQavO8CAsq9WoEyKC5U+UBPceRwRAzog+OYGi+PFZgZC0zpA0cM3uP7gBeudB/UAB6X9R67QF3QJgGhVhf1Aa0zpzgHiv1AQ0PaAB13Y8VAulM9tnSBoLuO7rf3gRfcj/pUTAkd9M+Qgf//Z") !important;
+}
+
+body:not([class="tbo"])
+{
+	box-shadow: 0 0 10px gray !important;
+	border-radius: 10px !important;
+	padding-bottom: 20px !important;
+	margin-bottom: 10px !important;
+	min-height: 550px !important;
+}
+
+
+
+}
